@@ -12,7 +12,7 @@ export default function Settings() {
   const [success, setSuccess] = useState(false);
 
   const { user, dispatch } = useContext(Context);
-  const PF = "https://darkxenium-blogs.herokuapp.com/images/";
+  const PF = "/images/";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -56,7 +56,7 @@ export default function Settings() {
           <div className="settingsPP">
             <img
               className="settingImg"
-              src={file ? URL.createObjectURL(file) : PF+user.profilePic}
+              src={file ? URL.createObjectURL(file) : PF + user.profilePic}
               alt="Please insert Your profile picture"
             />
             <label htmlFor="fileInput">
