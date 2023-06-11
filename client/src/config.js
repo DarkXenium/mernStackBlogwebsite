@@ -1,5 +1,5 @@
 import axios from "axios";
 export const axiosInstance = axios.create({
-  baseURL: "http://localhost:5000/api/",
+  baseURL: "https://darkxenium-blogs.onrender.com/api/",
 });
-export const baseurl = "http://localhost:5000";
+export const baseurl = "https://darkxenium-blogs.onrender.com";
