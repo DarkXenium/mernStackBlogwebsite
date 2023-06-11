@@ -57,7 +57,7 @@ export default function Settings() {
             <img
               className="settingImg"
               src={file ? URL.createObjectURL(file) : PF + user.profilePic}
-              alt="Please insert Your profile picture"
+              alt="Please insert Your profile"
             />
             <label htmlFor="fileInput">
               <i className="settingsPPIcon far fa-user-circle"></i>{" "}

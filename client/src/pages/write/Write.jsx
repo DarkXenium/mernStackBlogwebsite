@@ -8,7 +8,7 @@ export default function Write() {
   const [desc, setDesc] = useState("");
   const [file, setFile] = useState(null);
   const { user } = useContext(Context);
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newPost = {
@@ -27,7 +27,7 @@ export default function Write() {
       } catch (err) {}
     }
     try {
-      const res = await axiosInstance.post("/posts", newPost);
+      await axiosInstance.post("/posts", newPost);
       window.location.replace("/");
     } catch (err) {}
   };
