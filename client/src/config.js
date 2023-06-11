@@ -1,5 +1,5 @@
 import axios from "axios";
 export const axiosInstance = axios.create({
-  baseURL: "https://darkxenium-blogs.cyclic.app/api/",
+  baseURL: "http://localhost:5000/api/",
 });
-export const baseurl = "https://darkxenium-blogs.cyclic.app";
+export const baseurl = "http://localhost:5000";

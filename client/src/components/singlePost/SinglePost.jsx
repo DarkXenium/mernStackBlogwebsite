@@ -3,13 +3,14 @@ import "./singlePost.css";
 import { Link } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
 import {axiosInstance} from "../../config";
+import { baseurl } from "../../config";
 import { Context } from "../../context/Context";
 
 export default function SinglePost() {
   const location = useLocation();
   const path = location.pathname.split("/")[2];
   const [post, setPost] = useState({});
-  const PF = "/images/";
+const PF = `${baseurl}/images/`;
   const { user } = useContext(Context);
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");

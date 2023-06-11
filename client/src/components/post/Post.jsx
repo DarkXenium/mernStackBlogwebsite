@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import "./post.css";
-
+import { baseurl } from "../../config";
 export default function Post({ post }) {
-  const PF = "/images/";
+  const PF = `${baseurl}/images/`;
   return (
     <div className="post">
       <div className="container">
