@@ -1,4 +1,4 @@
 import axios from "axios";
 export const axiosInstance = axios.create({
-  baseURL: "",
+  baseURL: "https://darkxenium-blogs.cyclic.app/api/",
 });
