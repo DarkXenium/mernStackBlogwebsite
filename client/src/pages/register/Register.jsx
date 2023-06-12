@@ -2,6 +2,7 @@ import "./register.css";
 import { useState } from "react";
 import { axiosInstance } from "../../config";
 import { baseurl } from "../../config";
+import { useHistory } from 'react-router-dom';
 
 export default function Register() {
   const [username, setUsername] = useState("");
@@ -17,7 +18,8 @@ export default function Register() {
         email,
         password,
       });
-      res.data && window.location.replace("https://darkxenium-blogs.onrender.com/login");
+//       res.data && window.location.replace("https://darkxenium-blogs.onrender.com/login");
+      res.data && history.push('/login');
     } catch (err) {
       setError(true);
     }
