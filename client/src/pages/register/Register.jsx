@@ -1,7 +1,7 @@
 import "./register.css";
 import { useState } from "react";
-import {axiosInstance} from "../../config";
-
+import { axiosInstance } from "../../config";
+import { baseurl } from "../../config";
 
 export default function Register() {
   const [username, setUsername] = useState("");
@@ -17,7 +17,7 @@ export default function Register() {
         email,
         password,
       });
-      res.data && window.location.replace("/login");
+      res.data && window.location.replace(`${baseurl}/login`);
     } catch (err) {
       setError(true);
     }
