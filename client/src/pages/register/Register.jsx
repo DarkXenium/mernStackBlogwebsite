@@ -17,7 +17,7 @@ export default function Register() {
         email,
         password,
       });
-      res.data && window.location.replace(`${baseurl}/login`);
+      res.data && window.location.replace("https://darkxenium-blogs.onrender.com/login");
     } catch (err) {
       setError(true);
     }
