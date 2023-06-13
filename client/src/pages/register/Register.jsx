@@ -5,6 +5,8 @@ import { baseurl } from "../../config";
 import { useHistory } from 'react-router-dom';
 
 export default function Register() {
+  const history = useHistory();
+
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
