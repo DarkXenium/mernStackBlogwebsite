@@ -26,16 +26,6 @@ export default function Sidebar() {
         </p>
       </div>
       <div className="sidebarItem">
-        <span className="sidebarTitle">CATEGORIES</span>
-        <ul className="sidebarList">
-          {cats.map((c) => (
-            <Link className="link" to={`/?cat=${c.name}`}>
-              <li className="sidebarListItem">{c.name}</li>
-            </Link>
-          ))}
-        </ul>
-      </div>
-      <div className="sidebarItem">
         <span className="sidebarTitle">Check out my website and projects </span>
         <div className="sidebarSocial">
           <a href="http://avinash-kumar.netlify.com/">
